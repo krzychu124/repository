@@ -32,13 +32,18 @@ public class Main {
             //e.printStackTrace();
         }*/
 
+
+
         System.out.println(divide(12, 0));
+
         int[] array = new int[] {21, 3 ,0};
         System.out.println(divideTwoArrayElements(array, 0,1));
+
         PersonList personList = new PersonList();
         personList.add(new Person("Ads", "asds", 14, 1.5f, "asd"));
         personList.add(new Person("Ads", "asds", 17, 1.8f, "asd1"));
         personList.add(new Person("Cdd", "ADX", 16, 1.9f, "asd2"));
+
         try {
             System.out.println(personList.findPersonWithAge(-1));
         } catch (IllegalArgumentException e) {
@@ -58,6 +63,7 @@ public class Main {
             System.out.println("Nie dziel przez zero");
             return null;
         }
+
     }
 
     public static Integer divideTwoArrayElements(int[] intArray, int firstEleIndex, int secondEleIndex) {
